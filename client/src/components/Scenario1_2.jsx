@@ -76,15 +76,6 @@ const Welcome = () => {
         </div>
        
         </div>
-          <div className="car1">  
-          <div className="container">
-           <img src={CarImage} alt="Avatar" className="image" />
-                <div className="middle">
-                  <div className="text">car 1's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")} </div>
-           </div>
-        </div>
-       
-        </div>
         
         
       <div className="car2">  
@@ -161,11 +152,19 @@ const Welcome = () => {
        
        </div>
 
-     
+      <div className="car3">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 3's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
       <div className="car4">  
       
       <div className="container">
-           <img src={CarImage} alt= "Avatar" className="image" />
+           <img src={CarImage} alt="Avatar" className="image" />
                 <div className="middle">
                   <div className="text">car 4's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>
@@ -247,7 +246,7 @@ const Welcome = () => {
     >
       Send Message
     </button>
-    <Link to="Scenario1_3"  className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+    <Link to="Scenario1_2"  className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
 >Next page</Link>
    
   </>}
