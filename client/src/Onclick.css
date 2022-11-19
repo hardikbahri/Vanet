@@ -5,6 +5,8 @@
     position: relative;
     top:2.5cm;
     left: 6.5cm;
+    top:4cm;
+    
    
 
 }
@@ -16,6 +18,7 @@
     left:4cm;
     top:3cm;
     margin-top: .5cm;
+    margin-bottom: .5cm;
     
 
 }
@@ -55,7 +58,8 @@
     position: relative;
     left: 12cm;
     bottom: 6cm;
-    margin-top: .5cm;
+    margin-top: .8cm;
+    
     
     
 
@@ -113,6 +117,7 @@
   
   left: 4cm;
   padding: .5cm;
+  bottom:1cm;
   
 
 
@@ -139,9 +144,9 @@
     height: 2.5rem;
     width: 5.5rem;
     position:relative;
-    left:11cm;
-    bottom:2cm;
-    rotate: 20deg;
+    left:10cm;
+    bottom: .9cm;
+    
 }
 .arrow1_4{
 
@@ -211,8 +216,8 @@
   .image {
     opacity: 1;
     display: block;
-    height: 3.5rem;
-    width: 4cm;
+    height: 4rem;
+    width: 3cm;
     transition: .5s ease;
     backface-visibility: hidden;
   }
@@ -220,7 +225,7 @@
     opacity: 1;
     display: block;
     height: 5.5rem;
-    width: 6.0rem;
+    width: 5.0rem;
     transition: .5s ease;
     backface-visibility: hidden;
   }
@@ -335,7 +340,7 @@
   width: 5.5rem;
   position:relative;
   
- 
+ top:1cm;
  left:10.2cm;
  rotate: -30deg;
   
@@ -348,6 +353,7 @@
   
  
  left:10cm;
+ top:1cm;
 
   
 }
@@ -363,4 +369,98 @@
  rotate: 30deg;
 
   
+}
+.AROW7{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18cm;
+ 
+ 
+
+  
+}
+.AROW8{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18cm;
+ top:2.5cm;
+ rotate: -18deg;
+ 
+
+  
+}
+.AROW9{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18cm;
+ top:3cm;
+ rotate: -40deg;
+ 
+
+  
+}
+.AROW10{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18cm;
+ top:2cm;
+ rotate: 35deg;
+ 
+
+  
+}
+.AROW11{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18cm;
+ top:2cm;
+ rotate: 30deg;
+ 
+
+  
+}
+.AROW12{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18.2cm;
+ top:3cm;
+ rotate: -10deg;
+ 
+
+  
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }

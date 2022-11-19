@@ -5,6 +5,7 @@ import { BsInfoCircle } from "react-icons/bs";
 import {Link} from "react-router-dom" 
 import {useState} from "react";
 import CarImage from "../assets/car.jpg";
+
 import RsuImage from "../assets/rsu.png";
 import Arrow from "../arrow.png";
 import {motion} from "framer-motion"
@@ -46,9 +47,9 @@ const Welcome = () => {
 
 
   return (
-    <div className="">
-      <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 ">
-        <div className="flex flex-1 justify-start items-start flex-col">
+    <div className="flex w-full justify-center items-center">
+     <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
+      <div className="flex flex-1 justify-start items-start flex-col">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient">
             WELCOME LEA PROFESSIONAL :-   <br /> 
           </h1>
@@ -68,7 +69,7 @@ const Welcome = () => {
             </button>
           )}
 
-          <div className="car1">  
+          <div className="car1"style={{position:"relative",top:"5cm"}}>  
           <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
                 <div className="middle">
@@ -232,8 +233,7 @@ const Welcome = () => {
             </div>
           </div>
           <div className="p-7 sm:w-80 w-full  flex flex-col justify-end items-end blue-glassmorphism">
-            <Input placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
-            <Input placeholder="Enter Message" name="message" type="text" handleChange={handleChange} />
+            <Input placeholder="Transaction Count" name="addressTo" type="text" handleChange={handleChange} />
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />
 
@@ -242,13 +242,12 @@ const Welcome = () => {
   : <>
     <button
       type="button"
-      onClick={handleSubmit}
+       onClick={handleSubmit}
       className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
     >
-      Send Message
+      Allow Message Transfer
     </button>
-    <Link to="Scenario1_2"  className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
->Next page</Link>
+
    
   </>}
 </div>

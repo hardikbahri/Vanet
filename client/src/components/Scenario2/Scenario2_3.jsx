@@ -78,7 +78,7 @@ const Welcome = () => {
         </div>
         
         
-      <div className="car2"style={{position:"relative",top:"5cm"}}>  
+      <div className="car2">  
       
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
@@ -90,7 +90,8 @@ const Welcome = () => {
       </div>
        
       
-       <div className="AROW1">  
+     
+       <div className="AROW10">  
        <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
@@ -108,7 +109,7 @@ const Welcome = () => {
                 
        
        </div>
-       <div className="AROW2">  
+       <div className="AROW11">  
        <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
@@ -126,43 +127,7 @@ const Welcome = () => {
                 
        
        </div>
-       <div className="AROW6">  
-       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
-        <ul className="clearfix">
-           <li className="clearfix" id="blacksmith">
-                <p class="occupation"></p>
-                <div className="progress-bar">
-                        <div className="bar-fill" id="kuch">
-                             <span className="progress-bar-arrow"></span>
-                        </div>	
-                </div>
-                <p className="percentage"></p>
-            </li>
-        </ul>
-       
-  </motion.div>
-                
-       
-       </div>
-       <div className="AROW4">  
-       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
-        <ul className="clearfix">
-           <li className="clearfix" id="blacksmith">
-                <p class="occupation"></p>
-                <div className="progress-bar">
-                        <div className="bar-fill" id="kuch">
-                             <span className="progress-bar-arrow"></span>
-                        </div>	
-                </div>
-                <p className="percentage"></p>
-            </li>
-        </ul>
-       
-  </motion.div>
-                
-       
-       </div>
-       <div className="AROW5">  
+       <div className="AROW12">  
        <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
@@ -182,7 +147,7 @@ const Welcome = () => {
        </div>
 
      
-      <div className="car4">  
+      <div className="car4"style={{position:"relative",bottom:"1cm"}}>  
       
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />

@@ -46,10 +46,10 @@ const Welcome = () => {
 
 
   return (
-    <div className="">
-      <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 ">
-        <div className="flex flex-1 justify-start items-start flex-col">
-          <h1 className="text-3xl sm:text-5xl text-white text-gradient">
+    <div className="flex w-full justify-center items-center">
+    <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
+      <div className="flex flex-1 justify-start items-start flex-col">
+            <h1 className="text-3xl sm:text-5xl text-white text-gradient">
             WELCOME LEA PROFESSIONAL :-   <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
@@ -99,7 +99,7 @@ const Welcome = () => {
         </div>
       </div>
        <div className="arrow1_3">  
-       <motion.div animate={{scaleX:1.8}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
                 <p class="occupation"></p>
@@ -117,7 +117,7 @@ const Welcome = () => {
        
        </div>
        <div className="arrow2_3">  
-       <motion.div animate={{x:90,scaleX:3.0}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
                 <p class="occupation"></p>
@@ -232,8 +232,7 @@ const Welcome = () => {
             </div>
           </div>
           <div className="p-7 sm:w-80 w-full  flex flex-col justify-end items-end blue-glassmorphism">
-            <Input placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
-            <Input placeholder="Enter Message" name="message" type="text" handleChange={handleChange} />
+            <Input placeholder="Transaction Count" name="addressTo" type="text" handleChange={handleChange} />
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />
 
@@ -242,13 +241,12 @@ const Welcome = () => {
   : <>
     <button
       type="button"
-      onClick={handleSubmit}
+       onClick={handleSubmit}
       className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
     >
-      Send Message
+      Allow Message Transfer
     </button>
-    <Link to="Scenario1_2"  className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
->Next page</Link>
+
    
   </>}
 </div>
