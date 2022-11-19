@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
-import {Link} from "react-router-dom" 
+import {useNavigate} from "react-router-dom" 
 import {useState} from "react";
 import CarImage from "../assets/car.jpg";
 import RsuImage from "../assets/rsu.png";
@@ -26,18 +26,21 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 );
 
 const Welcome = () => {
+  
+
   //const  user = JSON.parse(localStorage.getItem('user'));
   //console.log(user);
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
-    const { addressTo, message } = formData;
+    const { addressTo } = formData;
 
     e.preventDefault();
 
-    if (!addressTo ||  !message) return;
+    if (!addressTo) return;
 
     sendTransaction();
+    
   };
 
  
@@ -98,7 +101,7 @@ const Welcome = () => {
         </div>
       </div>
        <div className="arrow1">  
-       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+  <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
                 <p class="occupation"></p>
@@ -195,8 +198,7 @@ const Welcome = () => {
             </div>
           </div>
           <div className="p-7 sm:w-80 w-full  flex flex-col justify-end items-end blue-glassmorphism">
-            <Input placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
-            <Input placeholder="Enter Message" name="message" type="text" handleChange={handleChange} />
+            <Input placeholder="Transaction Count" name="addressTo" type="text" handleChange={handleChange} />
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />
 
@@ -205,13 +207,12 @@ const Welcome = () => {
   : <>
     <button
       type="button"
-      onClick={handleSubmit}
+       onClick={handleSubmit}
       className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
     >
-      Send Message
+      Allow Message Transfer
     </button>
-    <Link to="Scenario1_2"  className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
->Next page</Link>
+
    
   </>}
 </div>

@@ -121,7 +121,7 @@ export const TransactionsProvider = ({ children }) => {
       if (ethereum) {
         const { addressTo, amount, keyword, message } = formData;
         const transactionsContract = createEthereumContract();
-        const parsedAmount = ethers.utils.parseEther("0.00001");
+        const parsedAmount = ethers.utils.parseEther("0.0000001");
         console.log(typeof addressTo)
 
          var To=hashmap.get(parseInt(addressTo));
@@ -146,9 +146,10 @@ export const TransactionsProvider = ({ children }) => {
         setIsLoading(false);
 
         const transactionsCount = await transactionsContract.getTransactionCount();
-
         setTransactionCount(transactionsCount.toNumber());
-        window.location.reload();
+        var a=parseInt(addressTo)+1;
+        console.log("mai transaction count ke andar hu..........")
+        window.location.href = `http://localhost:3000/Scenario1_${a}`;
       } else {
         console.log("No ethereum object");
       }
@@ -159,6 +160,7 @@ export const TransactionsProvider = ({ children }) => {
     }
   };
 
+  
   useEffect(() => {
     checkIfWalletIsConnect();
     checkIfTransactionsExists();

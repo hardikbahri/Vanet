@@ -246,8 +246,7 @@ const Welcome = () => {
     >
       Send Message
     </button>
-    <Link to="Scenario1_2"  className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
->Next page</Link>
+
    
   </>}
 </div>
