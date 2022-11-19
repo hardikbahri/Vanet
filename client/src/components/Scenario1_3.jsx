@@ -68,7 +68,7 @@ const Welcome = () => {
             </button>
           )}
 
-          <div className="car1">  
+          <div className="car1" style={{position:"relative",top:"5cm"}}>  
           <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
                 <div className="middle">
