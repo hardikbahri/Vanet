@@ -13,6 +13,10 @@ import { useState } from "react";
 import Welcome2 from "./components/Welcome2";
 import W3 from "./components/W3";
 import W4 from "./components/W4";
+import Scenario1_2 from "./components/Scenario1_2";
+import Scenario1_3 from "./components/Scenario1_3";
+import Scenario1_4 from "./components/Scenario1_4";
+import Scenario2_1 from "./components/Scenario2/Scenario2_1";
 
 function App() { 
   const [ user, setLoginUser] = useState({})
@@ -40,11 +44,11 @@ function App() {
           <Route path="/register" element={<Register />}>
             
           </Route>
-          <Route path="/Welcome2" element={<>
+          <Route path="/Scenario1_2" element={<>
             <div className=""> 
        <div className="gradient-bg-welcome">
           <Navbar />
-          <Welcome2 />
+          <Scenario1_2 />
           <Transactions />
           <Footer />
           </div>
@@ -52,11 +56,11 @@ function App() {
           </>}>
 
          </Route>
-          <Route path="/Welcome2/W3" element={<>
+          <Route path="/Scenario1_3" element={<>
             <div className=""> 
        <div className="gradient-bg-welcome">
           <Navbar />
-          <W3 />
+          <Scenario1_3 />
           <Services />
           <Transactions />
           <Footer />
@@ -65,12 +69,26 @@ function App() {
           </>}>
 
          </Route>
-          <Route path="/Welcome2/W3/W4" element={<>
+          <Route path="/Scenario1_4" element={<>
             <div className="min-h-screen"> 
        <div className="gradient-bg-welcome">
           <Navbar />
           
-          <W4 />
+          <Scenario1_4 />
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+          <Route path="/Scenario2_1" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
+          <Scenario2_1 />
           <Services />
           <Transactions />
           <Footer />

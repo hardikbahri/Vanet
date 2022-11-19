@@ -14,7 +14,7 @@
     position: relative;
     left:4cm;
     top:3cm;
-    margin-top: .5cm;
+    
     
 
 }
@@ -51,67 +51,9 @@
    
     position: relative;
     left: 12cm;
-    bottom: 6cm;
-    margin-top: .5cm;
+    bottom: 5cm;
     
     
-
-    
-
-}
-.car6{
-  margin-left: 2cm;
-    display:inline-flex;
-   
-    position: relative;
-    left: 12cm;
-    bottom: 6cm;
-    margin-top: .5cm;
-    
-    
-    
-
-    
-
-}
-.car7{
-    margin-left: 2cm;
-    display:inline-flex;
-   
-    position: relative;
-    left: 20cm;
-    bottom: 11cm;
-    
-    
-
-    
-
-}
-.car8{
-    margin-left: 2cm;
-    display:inline-flex;
-   
-    position: relative;
-    left: 20cm;
-    bottom: 10cm;
-    
-    
-
-    
-
-}
-.car9{
-   
-  margin-left: 2cm;
-  display:inline-flex;
- 
-  position: relative;
-  right:2cm;
-  
-  left: 4cm;
-  padding: .5cm;
-  
-
 
     
 
@@ -127,74 +69,8 @@
     height: 2.5rem;
     width: 5.5rem;
     position:relative;
-    left:5rem;
+    left:1cm;
     bottom:2cm;
-}
-.arrow1_3{
-
-    display: inline-flex;
-    height: 2.5rem;
-    width: 5.5rem;
-    position:relative;
-    left:10cm;
-    bottom:2cm;
-    rotate: 20deg;
-}
-.arrow1_4{
-
-    display: inline-flex;
-    height: 2.5rem;
-    width: 5.5rem;
-    position:relative;
-    left:9.5cm;
-    bottom:1cm;
-    rotate: 35deg;
-}
-.arrow2_3{
-
-    display: inline-flex;
-    height: 2.5rem;
-    width: 5.5rem;
-    position:relative;
-    left:10.2cm;
-    top:3.5cm;
-    rotate: -40deg;
-    
-}
-.arrow2_4{
-
-    display: inline-flex;
-    height: 2.5rem;
-    width: 5.5rem;
-    position:relative;
-    left:10cm;
-    top:3.5cm;
-    rotate: 30deg;
-    
-}
-.arrow3_3{
-
-    display: inline-flex;
-    height: 2.5rem;
-    width: 5.5rem;
-    position:relative;
-    
-    bottom:2cm;
-    left:10.2cm;
-    top:5cm;
-    rotate: -40deg;
-}
-.arrow3_4{
-
-    display: inline-flex;
-    height: 2.5rem;
-    width: 5.5rem;
-    position:relative;
-    
-    bottom:2cm;
-    left:10cm;
-    top:5cm;
-    rotate: -10deg;
 }
 
 .rsu{
@@ -296,33 +172,4 @@
   left:5rem;
   top:5cm;
 
-}
-.AROW1{
-  display: inline-flex;
-  height: 2.5rem;
-  width: 5.5rem;
-  position:relative;
-  left:16.5rem;
-  top:3cm;
-  rotate: 90deg;
-  padding:.5cm;
-}
-.AROW2{
-  display: inline-flex;
-  height: 2.5rem;
-  width: 5.5rem;
-  position:relative;
-  left:18rem;
-  bottom: 1.5cm;
-  rotate: -90deg;
-  padding: .5cm;
-}
-.AROW3{
-  display: inline-flex;
-  height: 2.5rem;
-  width: 5.5rem;
-  position:relative;
-  
-  bottom: 1.5cm;
-  rotate: -90deg;
 }

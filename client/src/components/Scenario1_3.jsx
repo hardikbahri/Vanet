@@ -12,6 +12,7 @@ import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
 
+
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
 const Input = ({ placeholder, name, type, value, handleChange }) => (
@@ -97,7 +98,43 @@ const Welcome = () => {
                 </div>
         </div>
       </div>
-       <div className="arrow1">  
+       <div className="arrow1_3">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+                
+       
+       </div>
+       <div className="arrow2_3">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+                
+       
+       </div>
+       <div className="arrow3_3">  
        <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
@@ -120,7 +157,7 @@ const Welcome = () => {
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image"/>
                 <div className="middle">
-                  <div className="text">car 3's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+                  <div className="text">accident:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>
         </div>
        
