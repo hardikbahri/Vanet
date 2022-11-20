@@ -12,6 +12,7 @@ import {motion} from "framer-motion"
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
+import { str1 } from "../utils/constants";
 
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
@@ -30,6 +31,7 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 const Welcome = () => {
   //const  user = JSON.parse(localStorage.getItem('user'));
   //console.log(user);
+  
 
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
@@ -44,7 +46,7 @@ const Welcome = () => {
   };
 
  
-  
+  console.log(str1)
 
 
   return (
@@ -52,7 +54,7 @@ const Welcome = () => {
      <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
       <div className="flex flex-1 justify-start items-start flex-col">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-            WELCOME LEA PROFESSIONAL :-   <br /> 
+            WELCOME LEA PROFESSIONAL :- {str1}  <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             CURRENTLY PRESENT CARS IN YOUR VANET ARE:-

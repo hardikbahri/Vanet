@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 
-import { contractABI, contractAddress , tv1,tv2,tv3 } from "../utils/constants";
+import { contractABI, contractAddress } from "../utils/constants";
 
 export const TransactionContext = React.createContext();
 
@@ -112,16 +112,7 @@ export const TransactionsProvider = ({ children }) => {
   ]);
 
 
-  var str="."
-  if((tv1==true&&tv2==true)||(tv2==true&&tv3==true)||(tv1==true&&tv3==true)){
-     str="true"
-    
-  }
-  
-  else{
-     str="false"
 
-  }
  
   console.log("hii")
  
@@ -132,8 +123,8 @@ export const TransactionsProvider = ({ children }) => {
     [1,"true"],
     [2,"true"],
     [3,"true"],
-    [4,str],
-    [5,str]
+    [4,""],
+    [5,""]
   ]);
   //console.log(hashmap.get(2));
   

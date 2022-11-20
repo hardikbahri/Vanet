@@ -11,7 +11,7 @@ import {motion} from "framer-motion"
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
-import { tv1,tv2,tv3 } from "../utils/constants";
+import { str1 } from "../utils/constants";
 
 
 
@@ -30,23 +30,18 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
     className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
   />
 );
+var str="."
 
 const Welcome = () => {
   //const  user = JSON.parse(localStorage.getItem('user'));
   //console.log(user);
 
   //alert("On Board Unit (OBU) Of Car2 has calculated that happening of the event is true")
-  if((tv1==true&&tv2==true)){
-    alert("the car 6 is malicious")   
- }
- else if(tv2==true&&tv3==true){
-    alert("the car 1 malicious")
- }
- else if(tv1==true&&tv3==true){
-    alert("the car 4 malicious")
- }
 
 
+
+
+ 
 
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
@@ -59,6 +54,7 @@ const Welcome = () => {
 
     sendTransaction();
   };
+  
 
  
   
@@ -69,7 +65,7 @@ const Welcome = () => {
     <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
       <div className="flex flex-1 justify-start items-start flex-col">
             <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-            WELCOME LEA PROFESSIONAL :-   <br /> 
+            WELCOME LEA PROFESSIONAL :- {str1}  <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             CURRENTLY PRESENT CARS IN YOUR VANET ARE:-
@@ -265,6 +261,8 @@ const Welcome = () => {
     >
       Allow Message Transfer
     </button>
+    <Link to="/5"       className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+> agein jao</Link>
 
    
   </>}

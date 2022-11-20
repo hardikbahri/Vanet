@@ -31,11 +31,11 @@ const Welcome = () => {
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
-    const { addressTo, message } = formData;
+    const { addressTo } = formData;
 
     e.preventDefault();
 
-    if (!addressTo ||  !message) return;
+    if (!addressTo ) return;
 
     sendTransaction();
   };
