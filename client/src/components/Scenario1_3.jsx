@@ -36,11 +36,14 @@ const Welcome = () => {
   //console.log(user);
 
   //alert("On Board Unit (OBU) Of Car2 has calculated that happening of the event is true")
-  if((tv1==true&&tv2==true)||(tv2==true&&tv3==true)||(tv1==true&&tv3==true)){
+  if((tv1==true&&tv2==true)){
     alert("the car 6 is malicious")   
  }
  else if(tv2==true&&tv3==true){
-
+    alert("the car 1 malicious")
+ }
+ else if(tv1==true&&tv3==true){
+    alert("the car 4 malicious")
  }
 
 
