@@ -117,7 +117,35 @@ function App() {
           </>}>
 
          </Route>
-          <Route path="/Scenario2_3" element={<>
+          <Route path="/6" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
+          <Scenario2_1 />
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+          <Route path="/7" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
+          <Scenario2_2 />
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+          <Route path="/8" element={<>
             <div className="min-h-screen"> 
        <div className="gradient-bg-welcome">
           <Navbar />
