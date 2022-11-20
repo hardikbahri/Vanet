@@ -211,6 +211,10 @@
   top:2cm;
  
 }
+#rsu{
+  height: 3cm;
+  width: 3cm;
+}
 
   
   .image {
@@ -463,4 +467,9 @@
   content: "";
   display: table;
   clear: both;
+}
+
+
+#border{
+   width: fit-content;
 }

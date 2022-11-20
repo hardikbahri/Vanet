@@ -14,6 +14,10 @@ import Welcome2 from "./components/Welcome2";
 import W3 from "./components/W3";
 import W4 from "./components/W4";
 import Scenario1_2 from "./components/Scenario1_2";
+import Scenario1_2_2 from "./components/Scenario1_2";
+import Scenario1_2_3 from "./components/Scenario1_2";
+
+
 import Scenario1_3 from "./components/Scenario1_3";
 import Scenario1_4 from "./components/Scenario1_4";
 import Scenario2_1 from "./components/Scenario2/Scenario2_1";
@@ -46,7 +50,7 @@ function App() {
           <Route path="/register" element={<Register />}>
             
           </Route>
-          <Route path="/Scenario1_2" element={<>
+          <Route path="/1" element={<>
             <div className=""> 
        <div className="gradient-bg-welcome">
           <Navbar />
@@ -58,10 +62,38 @@ function App() {
           </>}>
 
          </Route>
-          <Route path="/Scenario1_3" element={<>
+          <Route path="/2" element={<>
             <div className=""> 
        <div className="gradient-bg-welcome">
           <Navbar />
+          <Scenario1_2_2 />
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+          <Route path="/3" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
+          <Scenario1_2_3 />
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+          <Route path="/4" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
           <Scenario1_3 />
           <Services />
           <Transactions />
@@ -71,40 +103,12 @@ function App() {
           </>}>
 
          </Route>
-          <Route path="/Scenario1_4" element={<>
+          <Route path="/5" element={<>
             <div className="min-h-screen"> 
        <div className="gradient-bg-welcome">
           <Navbar />
           
           <Scenario1_4 />
-          <Services />
-          <Transactions />
-          <Footer />
-          </div>
-         </div> 
-          </>}>
-
-         </Route>
-          <Route path="/Scenario2_1" element={<>
-            <div className="min-h-screen"> 
-       <div className="gradient-bg-welcome">
-          <Navbar />
-          
-          <Scenario2_1 />
-          <Services />
-          <Transactions />
-          <Footer />
-          </div>
-         </div> 
-          </>}>
-
-         </Route>
-          <Route path="/Scenario2_2" element={<>
-            <div className="min-h-screen"> 
-       <div className="gradient-bg-welcome">
-          <Navbar />
-          
-          <Scenario2_2 />
           <Services />
           <Transactions />
           <Footer />

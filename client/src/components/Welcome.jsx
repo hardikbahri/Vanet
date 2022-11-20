@@ -49,9 +49,10 @@ const Welcome = () => {
 
 
   return (
-    <div className="">
-      <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 ">
-        <div className="flex flex-1 justify-start items-start flex-col">
+    <div className="dark [--scroll-mt:9.875rem] lg:[--scroll-mt:6.3125rem] js-focus-visible">
+    <div className="flex w-full justify-center items-center">
+      <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
+        <div className="flex flex-1 justify-start items-start flex-col ">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient">
             WELCOME LEA PROFESSIONAL :-   <br /> 
           </h1>
@@ -70,7 +71,7 @@ const Welcome = () => {
               </p>
             </button>
           )}
-
+    <div className="  flex flex-1 justify-start items-start flex-col " id="border" >
           <div className="car1">  
           <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
@@ -95,27 +96,14 @@ const Welcome = () => {
        
       <div className="rsu">  
         <div className="container">
-           <img src={RsuImage} alt="Avatar" className="image2" />
+           <img src={RsuImage} alt="Avatar" className="image2" id="rsu" />
                 <div className="middle">
                   <div className="text2">John Doe</div>
                 </div>
         </div>
       </div>
        <div className="arrow1">  
-  <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
-        <ul className="clearfix">
-           <li className="clearfix" id="blacksmith">
-                <p class="occupation"></p>
-                <div className="progress-bar">
-                        <div className="bar-fill" id="kuch">
-                             <span className="progress-bar-arrow"></span>
-                        </div>	
-                </div>
-                <p className="percentage"></p>
-            </li>
-        </ul>
-       
-  </motion.div>
+
                 
        
        </div>
@@ -144,7 +132,7 @@ const Welcome = () => {
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
                 <div className="middle">
-                  <div className="text">car 4's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+                  <div className="text">car 6's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>
         </div>
        
@@ -158,7 +146,7 @@ const Welcome = () => {
         </div>
        
       </div>
-
+      </div>
 
 
 
@@ -219,6 +207,7 @@ const Welcome = () => {
 </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

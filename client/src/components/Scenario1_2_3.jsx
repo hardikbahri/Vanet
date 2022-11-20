@@ -97,7 +97,9 @@ const Welcome = () => {
                 </div>
         </div>
       </div>
-       <div className="arrow1">  
+       
+
+       <div className="arrow3">  
        <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
@@ -115,7 +117,6 @@ const Welcome = () => {
                 
        
        </div>
-
 
       <div className="car3">  
       <div className="container">

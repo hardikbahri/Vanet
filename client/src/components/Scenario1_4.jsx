@@ -30,14 +30,15 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 const Welcome = () => {
   //const  user = JSON.parse(localStorage.getItem('user'));
   //console.log(user);
+
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
-    const { addressTo, message } = formData;
+    const { addressTo} = formData;
 
     e.preventDefault();
 
-    if (!addressTo ||  !message) return;
+    if (!addressTo) return;
 
     sendTransaction();
   };
@@ -215,7 +216,7 @@ const Welcome = () => {
         </div>
 
         <div className="flex flex-col flex-1 items-end justify-end w-full">
-          <div className="p-3 flex justify-end items-end flex-col rounded-xl h-40 sm:w-80 w-full eth-card .white-glassmorphism ">
+          <div className="p-3 flex justify-center items-center flex-col rounded-xl h-40 sm:w-80 w-full eth-card .white-glassmorphism ">
             <div className="flex justify-between flex-col w-full h-full">
               <div className="flex justify-between items-start">
                 <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">
@@ -232,7 +233,7 @@ const Welcome = () => {
               </div>
             </div>
           </div>
-          <div className="p-7 sm:w-80 w-full  flex flex-col justify-end items-end blue-glassmorphism">
+          <div className="p-7 sm:w-80 w-full  flex flex-col justify-center items-center blue-glassmorphism">
             <Input placeholder="Transaction Count" name="addressTo" type="text" handleChange={handleChange} />
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />

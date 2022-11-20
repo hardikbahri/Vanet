@@ -11,6 +11,11 @@ import {motion} from "framer-motion"
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
+import { tv1,tv2,tv3 } from "../utils/constants";
+
+
+
+
 
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
@@ -29,14 +34,25 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 const Welcome = () => {
   //const  user = JSON.parse(localStorage.getItem('user'));
   //console.log(user);
+
+  //alert("On Board Unit (OBU) Of Car2 has calculated that happening of the event is true")
+  if((tv1==true&&tv2==true)||(tv2==true&&tv3==true)||(tv1==true&&tv3==true)){
+    alert("the car 6 is malicious")   
+ }
+ else if(tv2==true&&tv3==true){
+
+ }
+
+
+
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
-    const { addressTo, message } = formData;
+    const { addressTo } = formData;
 
     e.preventDefault();
 
-    if (!addressTo ||  !message) return;
+    if (!addressTo) return;
 
     sendTransaction();
   };

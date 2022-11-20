@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 
-import { contractABI, contractAddress } from "../utils/constants";
+import { contractABI, contractAddress , tv1,tv2,tv3 } from "../utils/constants";
 
 export const TransactionContext = React.createContext();
+
 
 const { ethereum } = window;
 
@@ -102,16 +103,37 @@ export const TransactionsProvider = ({ children }) => {
     }
   };
   let hashmap=new Map([
-    [1,"0xd2562cE688891d6839b456FC6683225A3733809A"],
-    [2,"0x635036A872162CB8A7f79abF9a46527e6C4290c8"],
-    [3,"0x577fB0F413C98D09Ea89265128571ff181D37884"],
-    [4,"0xd2562cE688891d6839b456FC6683225A3733809A"]
+    [1,"0x635036A872162CB8A7f79abF9a46527e6C4290c8"], //rsu to car1
+
+    [2,"0x1d74037Fdc9f79A05081af086d5FE7d8B12Ea19f"], //rsu to car4
+    [3,"0xd9663636006FF27Cd11730Ea0e3BD61BE42f2cE8"], //rsu to car6
+    [4,"0xF8bEbf98ED2a13b9d611C7AF64772c83c9728Dc8"], //car 1 car 4 car 6 randomly with 51 percent to car 2
+    [5,"0xd2562cE688891d6839b456FC6683225A3733809A"]  //car 1 car 4 car 6 randomly with 51 percent to car 5
   ]);
+
+
+  var str="."
+  if((tv1==true&&tv2==true)||(tv2==true&&tv3==true)||(tv1==true&&tv3==true)){
+     str="true"
+    
+  }
+  
+  else{
+     str="false"
+
+  }
+ 
+  console.log("hii")
+ 
+
+  
+
   let map_2=new Map([
     [1,"true"],
     [2,"true"],
     [3,"true"],
-    [4,"false"]
+    [4,str],
+    [5,str]
   ]);
   //console.log(hashmap.get(2));
   
@@ -148,8 +170,9 @@ export const TransactionsProvider = ({ children }) => {
         const transactionsCount = await transactionsContract.getTransactionCount();
         setTransactionCount(transactionsCount.toNumber());
         var a=parseInt(addressTo)+1;
+      
         console.log("mai transaction count ke andar hu..........")
-        window.location.href = `http://localhost:3000/Scenario1_${a}`;
+        window.location.href = `http://localhost:3000/${a}`;
       } else {
         console.log("No ethereum object");
       }
@@ -177,6 +200,7 @@ export const TransactionsProvider = ({ children }) => {
         sendTransaction,
         handleChange,
         formData,
+
       }}
     >
       {children}
