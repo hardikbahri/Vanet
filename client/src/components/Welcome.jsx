@@ -4,7 +4,7 @@ import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
 import {useNavigate} from "react-router-dom" 
 import {useState} from "react";
-import CarImage from "../assets/car.jpg";
+import CarImage from "../assets/car.png";
 import Acc from "../assets/accident.jpg"
 import RsuImage from "../assets/rsu.png";
 import Arrow from "../arrow.png";
