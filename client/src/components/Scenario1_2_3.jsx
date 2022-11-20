@@ -48,11 +48,11 @@ const Welcome = () => {
     <div className="flex w-full justify-center items-center">
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
         <div className="flex flex-1 justify-start items-start flex-col">
-          <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-            WELCOME LEA PROFESSIONAL :-   <br /> 
+        <h1 className="text-2xl sm:text-5xl text-white text-gradient">
+          Please Approve the Follwoing request:- 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            CURRENTLY PRESENT CARS IN YOUR VANET ARE:-
+            RSU Has Verified The Event And Wants to Send information to other vehicles Please Approve...
           </p>
           {!currentAccount && (
             <button
@@ -142,20 +142,12 @@ const Welcome = () => {
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
                 <div className="middle">
-                  <div className="text">car 4's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+                  <div className="text">car 6's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>
         </div>
        
       </div>
-      <div className="car5">  
-      <div className="container">
-           <img src={CarImage} alt="Avatar" className="image"/>
-                <div className="middle">
-                  <div className="text">car 5's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
-           </div>
-        </div>
-       
-      </div>
+   
 
 
 

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 
-import { contractABI, contractAddress } from "../utils/constants";
+
+
+import { contractABI, contractAddress,str1,rsu } from "../utils/constants";
 
 export const TransactionContext = React.createContext();
 
@@ -112,19 +114,18 @@ export const TransactionsProvider = ({ children }) => {
   ]);
 
 
-
  
-  console.log("hii")
- 
-
+if(str1!="."){
+  var str=str1;
+}
   
 
   let map_2=new Map([
     [1,"true"],
     [2,"true"],
     [3,"true"],
-    [4,""],
-    [5,""]
+    [4,"true"],
+    [5,"true"]
   ]);
   //console.log(hashmap.get(2));
   

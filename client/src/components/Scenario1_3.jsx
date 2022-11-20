@@ -33,14 +33,17 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 var str="."
 
 const Welcome = () => {
-  //const  user = JSON.parse(localStorage.getItem('user'));
+  const  user = JSON.parse(localStorage.getItem('user'));
   //console.log(user);
 
   //alert("On Board Unit (OBU) Of Car2 has calculated that happening of the event is true")
 
+ 
 
-
-
+  if(str1==="."){
+    alert("aborting because all of the cars present in the vanet sent false information")
+     return
+   }
  
 
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
@@ -65,10 +68,11 @@ const Welcome = () => {
     <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
       <div className="flex flex-1 justify-start items-start flex-col">
             <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-            WELCOME LEA PROFESSIONAL :- {str1}  <br /> 
+            Please Approve the Follwoing request:- 
+   <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            CURRENTLY PRESENT CARS IN YOUR VANET ARE:-
+          All the Cars Present In the Vanet Wants to Send the Information to The cars not in The range of RSU Please Change your Metamask's account to car1 and approve request...
           </p>
           {!currentAccount && (
             <button
@@ -192,20 +196,12 @@ const Welcome = () => {
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
                 <div className="middle">
-                  <div className="text">car 4's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+                  <div className="text">car 6's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>
         </div>
        
       </div>
-      <div className="car5">  
-      <div className="container">
-           <img src={CarImage} alt="Avatar" className="image"/>
-                <div className="middle">
-                  <div className="text">car 5's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
-           </div>
-        </div>
-       
-      </div>
+  
 
 
 
@@ -261,8 +257,7 @@ const Welcome = () => {
     >
       Allow Message Transfer
     </button>
-    <Link to="/5"       className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
-> agein jao</Link>
+   
 
    
   </>}

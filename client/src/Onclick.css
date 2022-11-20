@@ -473,3 +473,23 @@
 #border{
    width: fit-content;
 }
+
+.warrow1{
+rotate:180deg;
+position: relative;
+left:3.5cm
+}
+
+.wcar1{
+position: relative;
+left:3.5cm;
+top:3cm
+}
+
+.wrsu{
+  position: relative;
+  top:3cm;
+  height: 4cm;
+  right:2cm;
+
+}

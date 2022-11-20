@@ -2,10 +2,10 @@ import abi from "./Transactions.json";
 
 export const contractAddress = "0x6F06aa88a1367B0dED7A8C282cc3F4F2ccB5559e";
 export const contractABI = abi.abi;
- const tv1=Math.random()<0.5
- const tv2=Math.random()<0.5
- const tv3=Math.random()<0.5
-
+ const tv1=true
+ const tv2=true
+ const tv3=false
+ export const rsu=true;
 
  var str="."
  
