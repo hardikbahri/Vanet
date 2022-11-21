@@ -482,7 +482,7 @@ left:3.5cm
 
 .wcar1{
 position: relative;
-left:3.5cm;
+left:4.9cm;
 top:3cm
 }
 
@@ -492,4 +492,31 @@ top:3cm
   height: 4cm;
   right:2cm;
 
+}
+
+#w2rsu{
+  position: relative;
+  top:3cm;
+  height: 4cm;
+  right:2cm;
+}
+
+.s1arrow1{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  left:7rem;
+  bottom:1cm;
+  
+  rotate: -50deg;
+}
+.s1arrow2{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  left:4rem;
+  
+  rotate: 20deg;
 }

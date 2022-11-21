@@ -40,7 +40,8 @@ const Welcome = () => {
     sendTransaction();
   };
 
- 
+  const  malicious = localStorage.getItem('malicious');
+  console.log(malicious+"njfndckjd")
   
 
 

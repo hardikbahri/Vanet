@@ -14,8 +14,8 @@ import Welcome2 from "./components/Welcome2";
 import W3 from "./components/W3";
 import W4 from "./components/W4";
 import Scenario1_2 from "./components/Scenario1_2";
-import Scenario1_2_2 from "./components/Scenario1_2";
-import Scenario1_2_3 from "./components/Scenario1_2";
+import Scenario122 from "./components/Scenario1_2_2";
+import Scenario1_2_3 from "./components/Scenario1_2_3";
 
 
 import Scenario1_3 from "./components/Scenario1_3";
@@ -66,7 +66,7 @@ function App() {
             <div className=""> 
        <div className="gradient-bg-welcome">
           <Navbar />
-          <Scenario1_2_2 />
+          <Scenario122 />
           <Services />
           <Transactions />
           <Footer />

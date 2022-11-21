@@ -10,16 +10,19 @@ export const contractABI = abi.abi;
  var str="."
  
 if((tv1==true&&tv2==true)){
-    str="the car 6 is malicious"
+    str="car 6 "
  }
  else if(tv2==true&&tv3==true){
 
-    str="the car 1 malicious"
+    str="car 1 "
  }
  else if(tv1==true&&tv3==true){
 
-    str="the car 4 malicious"
+    str="car 4 "
  }
+ 
+ 
+
 
  export const str1=str
  

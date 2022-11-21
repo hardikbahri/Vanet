@@ -21,6 +21,27 @@ const userSchema = new mongoose.Schema({
 })
 
 const User = new mongoose.model("User", userSchema)
+const carSchema = new mongoose.Schema({
+    malname: String,
+    
+})
+
+const Mal = new mongoose.model("Mal",carSchema);
+
+const create = async ()=>{
+    console.log("hi")
+    try{
+        const mal1=new Mal({
+            malname:"car x"
+        })
+        const result = await mal1.save();
+        console.log(result);
+    }
+    catch(err){
+        console.log(err);
+    }
+}
+create();
 
 //Routes
 app.post("/login", (req, res)=> {
@@ -64,3 +85,4 @@ app.post("/register", (req, res)=> {
 app.listen(9002,() => {
     console.log("BE started at port 9002")
 })
+

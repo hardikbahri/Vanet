@@ -13,9 +13,11 @@ import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
 import { str1 } from "../utils/constants";
 
+const kuch={"firstName":"John", "lastName":"Doe"}
 
+  
 
-
+localStorage.setItem('malicious', str1);
 
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
@@ -30,10 +32,10 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
     className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
   />
 );
-var str="."
+
 
 const Welcome = () => {
-  const  user = JSON.parse(localStorage.getItem('user'));
+  //const  user = JSON.parse(localStorage.getItem('user'));
   //console.log(user);
 
   //alert("On Board Unit (OBU) Of Car2 has calculated that happening of the event is true")

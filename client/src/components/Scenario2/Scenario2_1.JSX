@@ -41,7 +41,8 @@ const Welcome = () => {
   };
 
  
-  
+  const  malicious = localStorage.getItem('malicious');
+  console.log(malicious)
 
 
   return (
@@ -49,7 +50,7 @@ const Welcome = () => {
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 ">
         <div className="flex flex-1 justify-start items-start flex-col">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-            WELCOME LEA PROFESSIONAL :-   <br /> 
+            WELCOME LEA PROFESSIONAL :- {malicious}   <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             CURRENTLY PRESENT CARS IN YOUR VANET ARE:-
@@ -71,7 +72,7 @@ const Welcome = () => {
           <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
                 <div className="middle">
-                  <div className="text">car 1's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")} </div>
+                  <div className="text">car 4's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")} </div>
            </div>
         </div>
        
@@ -187,21 +188,12 @@ const Welcome = () => {
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
                 <div className="middle">
-                  <div className="text">car 4's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+                  <div className="text">car 1's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>
         </div>
        
       </div>
-      <div className="car9">  
-      
-      <div className="container">
-           <img src={CarImage} alt="Avatar" className="image" />
-                <div className="middle">
-                  <div className="text">car 9's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
-           </div>
-        </div>
-       
-      </div>
+
       <div className="car5">  
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image"/>

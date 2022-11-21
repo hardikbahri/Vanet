@@ -41,7 +41,8 @@ const Welcome = () => {
   };
 
  
-  
+  const  malicious = localStorage.getItem('malicious');
+  console.log(malicious+"njfndckjd")
 
 
   return (

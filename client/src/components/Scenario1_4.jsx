@@ -11,8 +11,6 @@ import {motion} from "framer-motion"
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
-import { str1 } from "../utils/constants";
-
 
 
 
@@ -33,14 +31,14 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 var str="."
 
 const Welcome = () => {
-  //const  user = JSON.parse(localStorage.getItem('user'));
+  const  malicious = localStorage.getItem('malicious');
   //console.log(user);
-
+  console.log(malicious)
   //alert("On Board Unit (OBU) Of Car2 has calculated that happening of the event is true")
 
  
 
-  if(str1==="."){
+  if(malicious==="."){
     alert("aborting because all of the cars present in the vanet sent false information")
      return
    }
@@ -68,7 +66,7 @@ const Welcome = () => {
     <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
       <div className="flex flex-1 justify-start items-start flex-col">
             <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-           {str1} as it send wrong information to other cars 
+           {malicious} as it send wrong information to other cars 
              <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">

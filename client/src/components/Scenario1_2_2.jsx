@@ -4,7 +4,7 @@ import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
 import {Link} from "react-router-dom" 
 import {useState} from "react";
-import CarImage from "../assets/car.jpg";
+import CarImage from "../assets/car.png";
 import RsuImage from "../assets/rsu.png";
 import Arrow from "../arrow.png";
 import {motion} from "framer-motion"
@@ -90,16 +90,16 @@ const Welcome = () => {
         
       </div>
        
-      <div className="rsu">  
+      <div className="wrsu">  
         <div className="container">
-           <img src={RsuImage} alt="Avatar" className="image2" />
+           <img src={RsuImage} alt="Avatar" className="w2rsu" id="rsu" />
                 <div className="middle">
                   <div className="text2">John Doe</div>
                 </div>
         </div>
       </div>
    
-    <div className="arrow2">  
+    <div className="s1arrow2">  
        <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
