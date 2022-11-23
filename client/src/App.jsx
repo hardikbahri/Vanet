@@ -23,6 +23,8 @@ import Scenario1_4 from "./components/Scenario1_4";
 import Scenario2_1 from "./components/Scenario2/Scenario2_1";
 import Scenario2_2 from "./components/Scenario2/Scenario2_2";
 import Scenario2_3 from "./components/Scenario2/Scenario2_3";
+import S2_4 from './components/Scenario2/s2_4'
+import S2_5 from './components/Scenario2/s2_5'
 
 function App() { 
   const [ user, setLoginUser] = useState({})
@@ -151,6 +153,34 @@ function App() {
           <Navbar />
           
           <Scenario2_3 />
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+         <Route path="/9" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
+          <S2_4 />
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+         <Route path="/10" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
+          <S2_5 />
           <Services />
           <Transactions />
           <Footer />

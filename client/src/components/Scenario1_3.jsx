@@ -11,13 +11,24 @@ import {motion} from "framer-motion"
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
-import { str1 } from "../utils/constants";
+import { str1,str2,str3 } from "../utils/constants";
 
-const kuch={"firstName":"John", "lastName":"Doe"}
 
+
+
+
+
+const DataJSON={
+
+
+  "c1":{"CarName":str1,"TrustScore":0},
+  "c2":{"CarName":str2,"TrustScore":50},
+  "c3":{"CarName":str3,"TrustScore":50}
   
+  
+  }
 
-localStorage.setItem('malicious', str1);
+localStorage.setItem('malicious', JSON.stringify(DataJSON));
 
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
@@ -113,7 +124,7 @@ const Welcome = () => {
        
       <div className="rsu">  
         <div className="container">
-           <img src={RsuImage} alt="Avatar" className="image2" />
+           <img src={RsuImage} alt="Avatar" className="image2" id="rsu2" />
                 <div className="middle">
                   <div className="text2">John Doe</div>
                 </div>

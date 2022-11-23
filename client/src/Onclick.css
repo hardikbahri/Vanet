@@ -3,10 +3,11 @@
 
     display: inline-flex;
     position: relative;
-    top:2.5cm;
-    left: 6.5cm;
-    top:4cm;
+ 
     
+    position: relative;
+left:4.9cm;
+top:4.5cm
    
 
 }
@@ -16,7 +17,7 @@
     display:inline-flex;
     position: relative;
     left:4cm;
-    top:3cm;
+    top:5cm;
     margin-top: .5cm;
     margin-bottom: .5cm;
     
@@ -29,7 +30,7 @@
     position: relative;
     
     left: 4cm;    
-    bottom:2cm;
+    bottom:3cm;
     padding: .5cm;
     
 
@@ -56,8 +57,8 @@
     display:inline-flex;
    
     position: relative;
-    left: 12cm;
-    bottom: 6cm;
+    left: 11cm;
+    bottom: 8cm;
     margin-top: .8cm;
     
     
@@ -81,48 +82,61 @@
     
 
 }
-.car7{
+.s2car7{
     margin-left: 2cm;
     display:inline-flex;
    
     position: relative;
     left: 20cm;
-    bottom: 11cm;
+    bottom: 4cm;
+    
+
+    
+
+}
+.s2car8{
+    margin-left: 2cm;
+    display:inline-flex;
+   
+    position: relative;
+    left: 12cm;
     
     
 
     
 
 }
-.car8{
-    margin-left: 2cm;
-    display:inline-flex;
-   
-    position: relative;
-    left: 20cm;
-    bottom: 10cm;
-    
-    
-
-    
-
-}
-.car9{
+.s2car9{
    
   margin-left: 2cm;
   display:inline-flex;
  
   position: relative;
-  right:2cm;
-  
-  left: 4cm;
-  padding: .5cm;
-  bottom:1cm;
+  left: 10cm;
   
 
 
     
 
+}
+.s2car4{
+  margin-left: 2cm;
+  display:inline-flex;
+ 
+  position: relative;
+  left: 3cm;
+  bottom: 0cm;
+  top:5cm;
+  
+  
+
+}
+.s2car1{
+  margin-left: 2cm;
+  display:inline-flex;
+  position: relative;
+  left: 9cm;
+  bottom: 2cm;
 }
 .msgbox{
     position: relative;
@@ -146,6 +160,7 @@
     position:relative;
     left:10cm;
     bottom: .9cm;
+    rotate: 10deg;
     
 }
 .arrow1_4{
@@ -208,13 +223,20 @@
 .rsu{
    
   position:relative;
-  top:2cm;
+  top:3.5cm;
  
 }
 #rsu{
   height: 3cm;
   width: 3cm;
 }
+#rsu2{
+  height: 2.5cm;
+  width: 2.5cm;
+}
+
+
+
 
   
   .image {
@@ -306,7 +328,8 @@
   width: 5.5rem;
   position:relative;
   left:5rem;
-  top:5cm;
+  top:3cm;
+  rotate: 45deg;
 
 }
 .AROW1{
@@ -344,9 +367,9 @@
   width: 5.5rem;
   position:relative;
   
- top:1cm;
- left:10.2cm;
- rotate: -30deg;
+ top:4.5cm;
+ left:8cm;
+ rotate: -50deg;
   
 }
 .AROW5{
@@ -483,7 +506,7 @@ left:3.5cm
 .wcar1{
 position: relative;
 left:4.9cm;
-top:3cm
+top:4.5cm
 }
 
 .wrsu{
@@ -517,6 +540,129 @@ top:3cm
   width: 5.5rem;
   position:relative;
   left:4rem;
+  top:1cm;
   
-  rotate: 20deg;
+  rotate: 35deg;
+}
+
+.s2AROW5{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:9cm;
+ bottom: 7.8cm;
+}
+
+.s2AROW6{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:8cm;
+ top:4cm;
+ rotate: 30deg;
+
+}
+.s2AROW16{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:7cm;
+ top:4cm;
+ rotate: 56deg;
+
+}
+.s2AROW7{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:17cm;
+ top:6.9cm;
+
+ 
+
+}
+
+.s2AROW10{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:15cm;
+ top:2cm;
+
+ rotate: 20deg;
+
+
+}
+
+.s2car77{
+  margin-left: 2cm;
+  display:inline-flex;
+ 
+  position: relative;
+  left: 20cm;
+  bottom: 2cm;
+
+}
+.s2AROW11{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:16cm;
+ top:8cm;
+
+ rotate: -29deg;
+
+
+}
+
+
+.wwcar3{
+  margin-left: 2cm;
+  display:inline-flex;
+
+  position: relative;
+  
+  left: 4cm;    
+  bottom:1.5cm;
+  padding: .5cm;
+
+}
+
+#wwcar3{
+  display: block;
+  width: 3.6cm;
+  display:inline-flex;
+  
+
+}
+
+.s2car10{
+  position: relative;
+  left:10.9cm;
+  top: 1.5cm;
+}
+
+.s2car11{
+  position: relative;
+  left:21.9cm;
+  bottom:2cm;
+
 }

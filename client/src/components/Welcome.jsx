@@ -5,7 +5,7 @@ import { BsInfoCircle } from "react-icons/bs";
 import {Link, useNavigate} from "react-router-dom" 
 import {useState} from "react";
 import CarImage from "../assets/car.png";
-import Acc from "../assets/accident.jpg"
+import Acc from "../assets/acc3.png"
 import RsuImage from "../assets/rsu.png";
 import Arrow from "../arrow.png";
 import {motion} from "framer-motion"
@@ -55,11 +55,11 @@ const Welcome = () => {
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
         <div className="flex flex-1 justify-start items-start flex-col ">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-            WELCOME LEA PROFESSIONAL :-{user.name}   <br /> 
+            WELCOME! {user.name}   <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-15 w-11/12 text-base">
-            some event has happened at car 1 information is sent to the rsu 
-            for identification of the event
+             Accident has happened at Car 3, information is sent to RSU
+            for the authentication of the event
           </p>
           {!currentAccount && (
             <button
@@ -121,9 +121,9 @@ const Welcome = () => {
   </motion.div>
           </div>      
 
-      <div className="car3">  
+      <div className="wwcar3">  
       <div className="container">
-           <img src={Acc} alt="Avatar" className="image"/>
+           <img src={Acc} alt="Avatar" className="image" id="wwcar3"/>
                 <div className="middle">
                   <div className="text">car 3's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>

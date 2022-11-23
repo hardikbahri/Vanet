@@ -96,7 +96,7 @@ const Welcome = () => {
         
       </div>
        
-      <div className="rsu">  
+      <div className="wrsu">  
         <div className="container">
            <img src={RsuImage} alt="Avatar" className="image2" id="rsu" />
                 <div className="middle">
@@ -119,9 +119,42 @@ const Welcome = () => {
         </ul>
        
   </motion.div>
+  
                 
        
        </div>
+       <div className="s1arrow2">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+  </div>
+  <div className="arrow3">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+  </div>
 
 
       <div className="car3">  

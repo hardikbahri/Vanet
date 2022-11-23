@@ -125,7 +125,9 @@ if(str1!="."){
     [2,"true"],
     [3,"true"],
     [4,"true"],
-    [5,"true"]
+    [5,"true"],
+    [6,"true"],
+    [7,"true"]
   ]);
   //console.log(hashmap.get(2));
   
@@ -136,10 +138,9 @@ if(str1!="."){
         const { addressTo, amount, keyword, message } = formData;
         const transactionsContract = createEthereumContract();
         const parsedAmount = ethers.utils.parseEther("0.0000001");
-        console.log(typeof addressTo)
 
          var To=hashmap.get(parseInt(addressTo));
-         console.log("maine nikala hua "+ To)
+
          var msg=map_2.get(parseInt(addressTo));
         await ethereum.request({
           method: "eth_sendTransaction",
@@ -162,6 +163,9 @@ if(str1!="."){
         const transactionsCount = await transactionsContract.getTransactionCount();
         setTransactionCount(transactionsCount.toNumber());
         var a=parseInt(addressTo)+1;
+        if(a>=5){
+          a=a+1
+        }
       
         console.log("mai transaction count ke andar hu..........")
         window.location.href = `http://localhost:3000/${a}`;

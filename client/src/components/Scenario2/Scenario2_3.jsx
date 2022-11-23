@@ -42,7 +42,7 @@ const Welcome = () => {
 
  
   const  malicious = localStorage.getItem('malicious');
-  console.log(malicious+"njfndckjd")
+  console.log(malicious)
 
 
   return (
@@ -50,7 +50,7 @@ const Welcome = () => {
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 ">
         <div className="flex flex-1 justify-start items-start flex-col">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-            WELCOME LEA PROFESSIONAL :-   <br /> 
+            What if There is no RSU for identification of an Event?    <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             CURRENTLY PRESENT CARS IN YOUR VANET ARE:-
@@ -68,31 +68,13 @@ const Welcome = () => {
             </button>
           )}
 
-          <div className="car1">  
-          <div className="container">
-           <img src={CarImage} alt="Avatar" className="image" />
-                <div className="middle">
-                  <div className="text">car 1's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")} </div>
-           </div>
-        </div>
+   
+        
+        
+    
        
-        </div>
-        
-        
-      <div className="car2">  
-      
-      <div className="container">
-           <img src={CarImage} alt="Avatar" className="image" />
-                <div className="middle">
-                  <div className="text">car 2's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
-           </div>
-        </div>
-        
-      </div>
-       
-      
-     
-       <div className="AROW10">  
+ 
+       <div className="AROW4">  
        <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
@@ -108,47 +90,13 @@ const Welcome = () => {
        
   </motion.div>
                 
-       
-       </div>
-       <div className="AROW11">  
-       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
-        <ul className="clearfix">
-           <li className="clearfix" id="blacksmith">
-                <p class="occupation"></p>
-                <div className="progress-bar">
-                        <div className="bar-fill" id="kuch">
-                             <span className="progress-bar-arrow"></span>
-                        </div>	
-                </div>
-                <p className="percentage"></p>
-            </li>
-        </ul>
-       
-  </motion.div>
+  </div>
+ 
                 
        
-       </div>
-       <div className="AROW12">  
-       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
-        <ul className="clearfix">
-           <li className="clearfix" id="blacksmith">
-                <p class="occupation"></p>
-                <div className="progress-bar">
-                        <div className="bar-fill" id="kuch">
-                             <span className="progress-bar-arrow"></span>
-                        </div>	
-                </div>
-                <p className="percentage"></p>
-            </li>
-        </ul>
-       
-  </motion.div>
-                
-       
-       </div>
 
      
-      <div className="car4"style={{position:"relative",bottom:"1cm"}}>  
+      <div className="s2car4">  
       
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
@@ -158,53 +106,114 @@ const Welcome = () => {
         </div>
        
       </div>
-      <div className="car9">  
-      
+
+      <div className="s2car1">  
       <div className="container">
-           <img src={CarImage} alt="Avatar" className="image" />
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 1's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+      <div className="s2AROW6">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+                
+  </div>
+  <div className="s2AROW16">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+                
+  </div>
+ 
+      <div className="s2car8">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 8's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+      <div className="s2car7">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 7's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+      <div className="s2car9">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
                 <div className="middle">
                   <div className="text">car 9's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>
         </div>
        
       </div>
-      <div className="car5">  
+      <div className="s2car10">  
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image"/>
                 <div className="middle">
-                  <div className="text">car 5's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+                  <div className="text">car 10's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>
         </div>
        
       </div>
-      <div className="car6">  
+      <div className="s2car11">  
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image"/>
                 <div className="middle">
-                  <div className="text">car 6's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+                  <div className="text">car 11's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>
         </div>
        
       </div>
-      <div className="car7">  
-      <div className="container">
-           <img src={CarImage} alt="Avatar" className="image"/>
-                <div className="middle">
-                  <div className="text">car 6's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
-           </div>
-        </div>
        
-      </div>
-      <div className="car8">  
-      <div className="container">
-           <img src={CarImage} alt="Avatar" className="image"/>
-                <div className="middle">
-                  <div className="text">car 6's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
-           </div>
-        </div>
+      <div className="s2AROW5">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
        
-      </div>
-
+  </motion.div>
+  
+  </div>
 
 
 
@@ -245,8 +254,7 @@ const Welcome = () => {
             </div>
           </div>
           <div className="p-7 sm:w-80 w-full  flex flex-col justify-end items-end blue-glassmorphism">
-            <Input placeholder="Address To" name="addressTo" type="text" handleChange={handleChange} />
-            <Input placeholder="Enter Message" name="message" type="text" handleChange={handleChange} />
+            <Input placeholder="Transaction Count" name="addressTo" type="text" handleChange={handleChange} />
 
             <div className="h-[1px] w-full bg-gray-400 my-2" />
 
@@ -260,8 +268,7 @@ const Welcome = () => {
     >
       Send Message
     </button>
-    <Link to="Scenario1_3"  className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
->Next page</Link>
+    
    
   </>}
 </div>

@@ -11,6 +11,7 @@ import {motion} from "framer-motion"
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
 import { Loader } from ".";
+import {rsu} from "../utils/constants"
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
@@ -31,24 +32,29 @@ const Welcome = () => {
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
-    const { addressTo} = formData;
+    const { addressTo } = formData;
 
     e.preventDefault();
 
-    if (!addressTo) return;
+    if (!addressTo ) return;
 
     sendTransaction();
   };
-
+  if(rsu==false){
+    alert("rsu has identified the event as false car1 is marked as malicious aborting ")
+    return <Link to="/" className="">go back</Link>
+  
+  }
  
   
 
 
   return (
+    
     <div className="flex w-full justify-center items-center">
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
         <div className="flex flex-1 justify-start items-start flex-col">
-        <h1 className="text-2xl sm:text-5xl text-white text-gradient">
+          <h1 className="text-2xl sm:text-5xl text-white text-gradient">
           Please Approve the Follwoing request:- 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
@@ -67,7 +73,7 @@ const Welcome = () => {
             </button>
           )}
 
-          <div className="car1">  
+<div className="wcar1">  
           <div className="container">
            <img src={CarImage} alt="Avatar" className="image" />
                 <div className="middle">
@@ -76,6 +82,7 @@ const Welcome = () => {
         </div>
        
         </div>
+        
         
         
       <div className="car2">  
@@ -89,17 +96,15 @@ const Welcome = () => {
         
       </div>
        
-      <div className="rsu">  
+      <div className="wrsu">  
         <div className="container">
-           <img src={RsuImage} alt="Avatar" className="image2" />
+           <img src={RsuImage} alt="Avatar" className="image2" id="rsu" />
                 <div className="middle">
                   <div className="text2">John Doe</div>
                 </div>
         </div>
       </div>
-       
-
-       <div className="arrow3">  
+       <div className="s1arrow1">  
        <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
@@ -114,9 +119,43 @@ const Welcome = () => {
         </ul>
        
   </motion.div>
+  
                 
        
        </div>
+       <div className="s1arrow2">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+  </div>
+  <div className="arrow3">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+  </div>
+
 
       <div className="car3">  
       <div className="container">
@@ -147,7 +186,7 @@ const Welcome = () => {
         </div>
        
       </div>
-   
+      
 
 
 
