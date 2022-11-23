@@ -4,14 +4,15 @@ import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
 import {Link} from "react-router-dom" 
 import {useState} from "react";
-
+import CarImage from "../../assets/car.png";
+import RsuImage from "../../assets/rsu.png";
+import Arrow from "../../arrow.png";
+import {motion} from "framer-motion"
 import { TransactionContext } from "../../context/TransactionContext";
 import { shortenAddress } from "../../utils/shortenAddress";
+import { Loader } from "..";
 
-
-
-
-
+import {mal1,mal2,notmal1} from "../../utils/constants"
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
@@ -25,50 +26,49 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
     className="my-2 w-full rounded-sm p-2 outline-none bg-transparent text-white border-none text-sm white-glassmorphism"
   />
 );
-var str="."
 
 const Welcome = () => {
-  const  malicious = JSON.parse(localStorage.getItem('malicious'));
+  //const  user = JSON.parse(localStorage.getItem('user'));
   //console.log(user);
-  console.log(malicious)
-  //alert("On Board Unit (OBU) Of Car2 has calculated that happening of the event is true")
-
- 
-
-  if(malicious==="."){
-    alert("aborting because all of the cars present in the vanet sent false information")
-     return
-   }
- 
-
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
-    const { addressTo } = formData;
+    const { addressTo, message } = formData;
 
     e.preventDefault();
 
-    if (!addressTo) return;
+    if (!addressTo ||  !message) return;
 
     sendTransaction();
   };
+
+  const DataJSON={
+
+    "c1":{"CarName":notmal1,"TrustScore":50},
+    "c2":{"CarName":mal1,"TrustScore":0},
+    "c3":{"CarName":mal2,"TrustScore":0}
+    
+   
+
+    
+    
+    
+    }
   
+  localStorage.setItem('s2', JSON.stringify(DataJSON));
+  const  malicious = localStorage.getItem('malicious');
+  console.log(malicious)
 
- 
-
-
-console.log(malicious)
 
   return (
-    <div className="flex w-full justify-center items-center">
-    <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
-      <div className="flex flex-1 justify-start items-start flex-col">
-            <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-           {malicious.c4.CarName} as it send wrong information to other cars 
-             <br /> 
+    <div className="">
+      <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 ">
+        <div className="flex flex-1 justify-start items-start flex-col">
+          <h1 className="text-3xl sm:text-5xl text-white text-gradient">
+            What if There is no RSU for identification of an Event?    <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-          {malicious.c1.CarName}'s reputation score decreases to zero
+            CURRENTLY PRESENT CARS IN YOUR VANET ARE:-
           </p>
           {!currentAccount && (
             <button
@@ -83,93 +83,138 @@ console.log(malicious)
             </button>
           )}
 
-     <div className="grid sm:grid-cols-3 grid-cols-2 w-full mt-10">
-            <div className={`rounded-tl-2xl ${companyCommonStyles}`}>
-              CAR NAME
-            </div>
-            <div className={companyCommonStyles}>
-              TRUST SCORE</div>
-            <div className={`sm:rounded-tr-2xl ${companyCommonStyles}`}>
-              Comments
-            </div>
-            <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-            {malicious.c1.CarName}
-            </div>
-            <div className={companyCommonStyles}>
-            {malicious.c1.TrustScore}
-            </div>
-            <div className={`br-2xl ${companyCommonStyles}`}>
-               Malicious/Untrusted 
-            </div>
-            <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-            {malicious.c2.CarName}
-            </div>
-            <div className={companyCommonStyles}>
-            {malicious.c2.TrustScore+10}
-            </div>
-            <div className={`br-2xl ${companyCommonStyles}`}>
-               trusted (updated)
-            </div>
-            <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-            car 3
-            </div>
-            <div className={companyCommonStyles}>
-             60 
-            </div>
-            <div className={`br-2xl ${companyCommonStyles}`}>
-               Accident happened at this car :- Trusted 
-            </div>
-            <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-             car 2
-            </div>
-            <div className={companyCommonStyles}>
-            20
-            </div>
-            <div className={`br-2xl ${companyCommonStyles}`}>
-             Can't Say 
-            </div>
-            <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-            {malicious.c3.CarName}
-            </div>
-            <div className={companyCommonStyles}>
-            {malicious.c3.TrustScore}
-            </div>
-            <div className={`br-2xl ${companyCommonStyles}`}>
-               trusted 
-            </div>
-            {/* {new hai yaha se} */}
-            <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-             {malicious.c4.CarName}
-            </div>
-            <div className={companyCommonStyles}>
-            {malicious.c4.TrustScore}
-            </div>
-            <div className={`br-2xl ${companyCommonStyles}`}>
-            Malicious/Untrusted 
+   
+        
+        
+    
+       
+ 
+       <div className="AROW4444">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+                
+  </div>
+ 
+                
+       
 
-            </div>
-            <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-             {malicious.c6.CarName}
-            </div>
-            <div className={companyCommonStyles}>
-            {   
-                malicious.c6.TrustScore
-            }
-            </div>
-            <div className={`br-2xl ${companyCommonStyles}`}>
-             Trusted 
-            </div>
-            <div className={`sm:rounded-bl-2xl ${companyCommonStyles}`}>
-            car 7
-            </div>
-            <div className={companyCommonStyles}>
-            20
-            </div>
-            <div className={`rounded-br-2xl ${companyCommonStyles}`}>
-               can't say 
-            </div>
-            
-     </div>
+     
+      <div className="s2car4">  
+      
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image" />
+                <div className="middle">
+                  <div className="text">car 4's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+
+      <div className="s2car1">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 1's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+      
+  <div className="s2AROW1666">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+                
+  </div>
+ 
+      <div className="s2car8">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 8's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+      <div className="s2car777">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 7's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+      <div className="s2car9">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 9's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+      <div className="s2car10">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 10's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+      <div className="s2car11">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 11's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+       
+      <div className="s2AROW555">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+  
+  </div>
+
+
 
           
 
@@ -207,7 +252,25 @@ console.log(malicious)
               </div>
             </div>
           </div>
+          <div className="p-7 sm:w-80 w-full  flex flex-col justify-end items-end blue-glassmorphism">
+            <Input placeholder="Transaction Count" name="addressTo" type="text" handleChange={handleChange} />
 
+            <div className="h-[1px] w-full bg-gray-400 my-2" />
+
+{isLoading
+  ? <Loader />
+  : <>
+    <button
+      type="button"
+      onClick={handleSubmit}
+      className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+    >
+      Send Message
+    </button>
+    
+   
+  </>}
+</div>
         </div>
       </div>
     </div>

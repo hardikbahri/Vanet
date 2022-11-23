@@ -11,27 +11,6 @@ import {motion} from "framer-motion"
 import { TransactionContext } from "../../context/TransactionContext";
 import { shortenAddress } from "../../utils/shortenAddress";
 import { Loader } from "..";
-import { str1,str2,str3 } from "../../utils/constants";
-import {mal,notmal1,notmal2} from "../../utils/constants"
-
-
-
-
-
-const DataJSON={
-
- 
-  "c1":{"CarName":str1,"TrustScore":0},
-  "c2":{"CarName":str2,"TrustScore":50},
-  "c3":{"CarName":str3,"TrustScore":50},
-  "c4":{"CarName":mal,"TrustScore":0},
-  "c5":{"CarName":notmal1,"TrustScore":50},
-  "c6":{"CarName":notmal2,"TrustScore":50}
-  
-  
-  }
-
-localStorage.setItem('malicious', JSON.stringify(DataJSON));
 
 const companyCommonStyles = "min-h-[70px] sm:px-0 px-2 sm:min-w-[120px] flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 
@@ -95,42 +74,8 @@ const Welcome = () => {
     
        
  
-       <div className="s2AROW7">  
-       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:3}} class="page-wrapper">
-        <ul className="clearfix">
-           <li className="clearfix" id="blacksmith">
-                <p class="occupation"></p>
-                <div className="progress-bar">
-                        <div className="bar-fill" id="kuch">
-                             <span className="progress-bar-arrow"></span>
-                        </div>	
-                </div>
-                <p className="percentage"></p>
-            </li>
-        </ul>
-       
-  </motion.div>
-                
-  </div>
-  <div className="s2AROW10">  
-       <motion.div animate={{x:30,scaleX:2.0}} initial={{scaleX:0.8}} transition={{delay:3}} class="page-wrapper">
-        <ul className="clearfix">
-           <li className="clearfix" id="blacksmith">
-                <p class="occupation"></p>
-                <div className="progress-bar">
-                        <div className="bar-fill" id="kuch">
-                             <span className="progress-bar-arrow"></span>
-                        </div>	
-                </div>
-                <p className="percentage"></p>
-            </li>
-        </ul>
-       
-  </motion.div>
-                
-  </div>
-  <div className="s2AROW11">  
-       <motion.div animate={{x:30,scaleX:2.0}} initial={{scaleX:0.8}} transition={{delay:3}} class="page-wrapper">
+       <div className="AROW44">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
         <ul className="clearfix">
            <li className="clearfix" id="blacksmith">
                 <p class="occupation"></p>
@@ -171,6 +116,25 @@ const Welcome = () => {
         </div>
        
       </div>
+      
+  <div className="s2AROW166">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+                
+  </div>
+ 
       <div className="s2car8">  
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image"/>
@@ -180,7 +144,7 @@ const Welcome = () => {
         </div>
        
       </div>
-      <div className="s2car77">  
+      <div className="s2car777">  
       <div className="container">
            <img src={CarImage} alt="Avatar" className="image"/>
                 <div className="middle">
@@ -198,7 +162,42 @@ const Welcome = () => {
         </div>
        
       </div>
-
+      <div className="s2car10">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 10's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+      <div className="s2car11">  
+      <div className="container">
+           <img src={CarImage} alt="Avatar" className="image"/>
+                <div className="middle">
+                  <div className="text">car 11's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
+           </div>
+        </div>
+       
+      </div>
+       
+      <div className="s2AROW55">  
+       <motion.div animate={{x:30,scaleX:1.5}} initial={{scaleX:0.8}} transition={{delay:2}} class="page-wrapper">
+        <ul className="clearfix">
+           <li className="clearfix" id="blacksmith">
+                <p class="occupation"></p>
+                <div className="progress-bar">
+                        <div className="bar-fill" id="kuch">
+                             <span className="progress-bar-arrow"></span>
+                        </div>	
+                </div>
+                <p className="percentage"></p>
+            </li>
+        </ul>
+       
+  </motion.div>
+  
+  </div>
 
 
 

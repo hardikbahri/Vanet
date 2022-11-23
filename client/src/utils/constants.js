@@ -39,32 +39,36 @@ if((tv1==true&&tv2==true)){
  export const str3=str12
  
  const car1tv=true
- const car8tv=true
- const car9tv=false
+ const car8tv=false
+ const car9tv=true
+ const car10tv=true
 
- var str13="."
- let str7="."
- let str8="."
+ var car8="."
+ let car9=""
+ let car10="."
 
  
-if((car1tv==true&&car8tv==true)){
-    str13="car 9"
-    str7="car 1 "
-    str8="car 8"
- }
- else if(car8tv==true&&car9tv==true){
+if(car8tv==false&&car9tv==false){
 
-    str13="car 1"
-    str7="car 8"
-    str8="car 9"
- }
- else if(car9tv==true&&car1tv==true){
+   car8="car 8"
+   car9="car 9"
+   car10="car 10"
 
-    str13="car 9"
-    str7="car 1"
-    str8="car 8"
- }
 
- export const mal=str13
- export const notmal1=str7
- export const notmal2=str8
+}
+else if(car8tv==true){
+   car8="car 9"
+   car9=""
+   car10="car 10"
+}
+else if(car9tv==true){
+   car8="car 8"
+   car9=""
+   car10="car 10"
+
+}
+
+ export const mal1=car8
+ export const mal2=car9
+
+ export const notmal1=car10
