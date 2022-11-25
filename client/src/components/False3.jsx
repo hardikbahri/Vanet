@@ -2,15 +2,9 @@ import React, { useContext } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
-import {Link} from "react-router-dom" 
-import {useState} from "react";
-import CarImage from "../assets/car.png";
-import RsuImage from "../assets/rsu.png";
-import Arrow from "../arrow.png";
-import {motion} from "framer-motion"
+
 import { TransactionContext } from "../context/TransactionContext";
 import { shortenAddress } from "../utils/shortenAddress";
-import { Loader } from ".";
 
 
 
@@ -32,17 +26,14 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 var str="."
 
 const Welcome = () => {
-  const  malicious = JSON.parse(localStorage.getItem('malicious'));
+  const  malicious = JSON.parse(localStorage.getItem('s2'));
   //console.log(user);
   console.log(malicious)
   //alert("On Board Unit (OBU) Of Car2 has calculated that happening of the event is true")
 
  
 
-  if(malicious==="."){
-    alert("aborting because all of the cars present in the vanet sent false information")
-     return
-   }
+  
  
 
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
@@ -56,10 +47,26 @@ const Welcome = () => {
 
     sendTransaction();
   };
-  
+  let str4=malicious.c2.CarName;
+  let Ts=50;
+  let tt="Trusted"
+  let ts2=50
+  let tt2="Trusted"
+  if(malicious.c2.CarName=="car 8"){
+    ts2=0;
+    tt2="Malicious/Untrusted"
+  }
+  if(malicious.c2.CarName=="car 9"){
+    Ts=0;
+    tt="Malicious/Untrusted"
+  }
+if(malicious.c3.CarName!==""){
+   str4=malicious.c2.CarName+" and " +malicious.c3.CarName;
+   Ts=0;
+   tt="Malicious/Untrusted"
+}
 
  
-  console.log(malicious.c1);
 
 
   return (
@@ -67,11 +74,11 @@ const Welcome = () => {
     <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
       <div className="flex flex-1 justify-start items-start flex-col">
             <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-           {malicious.c1.CarName} is malicious as it send wrong information to other cars 
+           malicious vehicles are car 8,car 9,car 10  as they sent wrong information to other cars 
              <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-          {malicious.c1.CarName}'s reputation score decreases to zero car 2's trust score is increased by 10 as it reported malicious vehicles to us
+          car 8,car 9,car 10's trust score decreases to zero car 11 reported it to you so it's trust score increased by 10
           </p>
           {!currentAccount && (
             <button
@@ -104,53 +111,75 @@ const Welcome = () => {
             20
             </div>
             <div className={companyCommonStyles}>
-            {malicious.c1.TrustScore}</div>
+            0</div>
             <div className={`br-2xl ${companyCommonStyles}`}>
-               Malicious/Untrusted 
+            Malicious/Trusted 
             </div>
             <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-            {malicious.c2.CarName}
+            car 8
             </div>
             <div className={companyCommonStyles}>
            20
             </div>
             <div className={companyCommonStyles}>
-            {malicious.c2.TrustScore}</div>
+            0</div>
             <div className={`br-2xl ${companyCommonStyles}`}>
-               trusted 
+               {tt2}
             </div>
             <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-            car 3
+            car 9
             </div>
             <div className={companyCommonStyles}>
              20 
             </div>
             <div className={companyCommonStyles}>
-              60</div>
+              0</div>
             <div className={`br-2xl ${companyCommonStyles}`}>
-               Accident happened at this car :- Trusted 
+            Malicious/Trusted 
             </div>
             <div className={`sm:bl-2xl ${companyCommonStyles}`}>
-             car 2
+             car 1
+            </div>
+            <div className={companyCommonStyles}>
+            50
+            </div>
+            <div className={companyCommonStyles}>
+              50</div>
+            <div className={`br-2xl ${companyCommonStyles}`}>
+             Trusted
+            </div>
+            <div className={`sm:bl-2xl ${companyCommonStyles}`}>
+            car 7
             </div>
             <div className={companyCommonStyles}>
             20
             </div>
             <div className={companyCommonStyles}>
-              30</div>
+            20</div>
             <div className={`br-2xl ${companyCommonStyles}`}>
-             Can't Say 
+              can't say
+            </div>
+            <div className={`sm:bl-2xl ${companyCommonStyles}`}>
+            car 11
+            </div>
+            <div className={companyCommonStyles}>
+            20
+            </div>
+            <div className={companyCommonStyles}>
+            30</div>
+            <div className={`br-2xl ${companyCommonStyles}`}>
+              can't say
             </div>
             <div className={`sm:rounded-bl-2xl ${companyCommonStyles}`}>
-            {malicious.c3.CarName}
+            car 4
             </div>
             <div className={companyCommonStyles}>
-            20
+            50
             </div>
             <div className={companyCommonStyles}>
-            {malicious.c3.TrustScore}</div>
+            50</div>
             <div className={`rounded-br-2xl ${companyCommonStyles}`}>
-               trusted 
+              can't say
             </div>
      </div>
 
@@ -190,19 +219,7 @@ const Welcome = () => {
               </div>
             </div>
           </div>
-          <div className="p-7 sm:w-80 w-full  flex flex-col justify-end items-end blue-glassmorphism">
-           <div className="h-[1px] w-full bg-gray-400 my-2" />
 
-{isLoading
-  ? <Loader />
-  : <>
-
-    <Link to="/6"       className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
-> Next Scenario</Link>
-
-   
-  </>}
-</div>
         </div>
       </div>
     </div>

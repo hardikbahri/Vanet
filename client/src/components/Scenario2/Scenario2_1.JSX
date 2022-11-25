@@ -50,10 +50,11 @@ const Welcome = () => {
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 ">
         <div className="flex flex-1 justify-start items-start flex-col">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-            What if There is no RSU for identification of an Event?    <br /> 
+           There is no RSU for identification of an Event...    <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            CURRENTLY PRESENT CARS IN YOUR VANET ARE:-
+            Consider a traffic jam event at car 4(trusted) and wants to send the information
+            to other vehicles Please Alow Message Transfer...
           </p>
           {!currentAccount && (
             <button

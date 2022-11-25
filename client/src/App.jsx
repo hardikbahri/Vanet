@@ -16,6 +16,9 @@ import W4 from "./components/W4";
 import Scenario1_2 from "./components/Scenario1_2";
 import Scenario122 from "./components/Scenario1_2_2";
 import Scenario1_2_3 from "./components/Scenario1_2_3";
+import False from "./components/False"
+import False2 from "./components/False2"
+import False3 from "./components/False3"
 
 
 import Scenario1_3 from "./components/Scenario1_3";
@@ -198,6 +201,62 @@ function App() {
           <Navbar />
           
           <S2_5 />
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+         <Route path="/12" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
+          <S2_7/>
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+         <Route path="/13" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
+          <False />
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+         <Route path="/14" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
+          <False2 />
+          <Services />
+          <Transactions />
+          <Footer />
+          </div>
+         </div> 
+          </>}>
+
+         </Route>
+         <Route path="/15" element={<>
+            <div className="min-h-screen"> 
+       <div className="gradient-bg-welcome">
+          <Navbar />
+          
+          <False3 />
           <Services />
           <Transactions />
           <Footer />

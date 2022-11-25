@@ -82,7 +82,7 @@ if(malicious.c3.CarName!==""){
              <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-          {str4}'s reputation score decreases to zero
+          {str4}'s reputation score decreases to zero car 11's trust score is increased by 10 as it reported malicious vehicles to us
           </p>
           {!currentAccount && (
             <button
@@ -170,7 +170,7 @@ if(malicious.c3.CarName!==""){
             20
             </div>
             <div className={companyCommonStyles}>
-            20</div>
+            30</div>
             <div className={`br-2xl ${companyCommonStyles}`}>
               can't say
             </div>

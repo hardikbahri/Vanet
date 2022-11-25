@@ -67,11 +67,11 @@ const Welcome = () => {
     <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
       <div className="flex flex-1 justify-start items-start flex-col">
             <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-           {malicious.c1.CarName} is malicious as it send wrong information to other cars 
+             car 1,car 4,car 6 sent false information
              <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-          {malicious.c1.CarName}'s reputation score decreases to zero car 2's trust score is increased by 10 as it reported malicious vehicles to us
+          there trust score decreases to 0 car 2's trust score is increased by 10 as it reported malicious vehicles to us
           </p>
           {!currentAccount && (
             <button
@@ -115,9 +115,9 @@ const Welcome = () => {
            20
             </div>
             <div className={companyCommonStyles}>
-            {malicious.c2.TrustScore}</div>
+          0</div>
             <div className={`br-2xl ${companyCommonStyles}`}>
-               trusted 
+            Malicious/Untrusted 
             </div>
             <div className={`sm:bl-2xl ${companyCommonStyles}`}>
             car 3
@@ -148,9 +148,9 @@ const Welcome = () => {
             20
             </div>
             <div className={companyCommonStyles}>
-            {malicious.c3.TrustScore}</div>
+            0</div>
             <div className={`rounded-br-2xl ${companyCommonStyles}`}>
-               trusted 
+            Malicious/Untrusted 
             </div>
      </div>
 

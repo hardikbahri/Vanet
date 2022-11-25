@@ -5,6 +5,8 @@ import { BsInfoCircle } from "react-icons/bs";
 import {Link} from "react-router-dom" 
 import {useState} from "react";
 import CarImage from "../assets/car.png";
+import Acc from "../assets/acc3.png"
+
 import RsuImage from "../assets/rsu.png";
 import Arrow from "../arrow.png";
 import {motion} from "framer-motion"
@@ -159,7 +161,7 @@ const Welcome = () => {
 
       <div className="car3">  
       <div className="container">
-           <img src={CarImage} alt="Avatar" className="image"/>
+           <img src={Acc} alt="Avatar" className="image"/>
                 <div className="middle">
                   <div className="text">car 3's addr:- {shortenAddress("0x635036A872162CB8A7f79abF9a46527e6C4290c8")}</div>
            </div>
