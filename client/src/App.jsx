@@ -61,7 +61,6 @@ function App() {
           <Route path="/1" element={<>
             <div className=""> 
        <div className="gradient-bg-welcome">
-          <Navbar />
           <Scenario1_2 />
           <Transactions />
           <Footer />

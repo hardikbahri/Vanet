@@ -50,7 +50,7 @@ const Welcome = () => {
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 ">
         <div className="flex flex-1 justify-start items-start flex-col">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-           There is no RSU for identification of an Event...    <br /> 
+          What if there is no RSU for identification of an Event...    <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             Consider a traffic jam event at car 4(trusted) and wants to send the information
@@ -267,7 +267,7 @@ const Welcome = () => {
       onClick={handleSubmit}
       className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
     >
-      Send Message
+      Allow Message Transfer
     </button>
     
    

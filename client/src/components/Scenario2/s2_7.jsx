@@ -78,7 +78,7 @@ if(malicious.c3.CarName!==""){
     <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
       <div className="flex flex-1 justify-start items-start flex-col">
             <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-           malicious vehicles are {str4}  as they sent wrong information to other cars 
+           car 8 is malicious as it sent wrong information to other cars 
              <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">

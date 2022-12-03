@@ -53,7 +53,7 @@ const Welcome = () => {
             What if There is no RSU for identification of an Event?    <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-            CURRENTLY PRESENT CARS IN YOUR VANET ARE:-
+            
           </p>
           {!currentAccount && (
             <button
@@ -266,7 +266,7 @@ const Welcome = () => {
       onClick={handleSubmit}
       className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
     >
-      Send Message
+      Allow Message Transfer
     </button>
     
    

@@ -74,11 +74,11 @@ if(malicious.c3.CarName!==""){
     <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
       <div className="flex flex-1 justify-start items-start flex-col">
             <h1 className="text-3xl sm:text-5xl text-white text-gradient">
-           malicious vehicles are car 8,car 9,car 10  as they sent wrong information to other cars 
+           There are Multiple Malicious vehicles in the VANET
              <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
-          car 8,car 9,car 10's trust score decreases to zero car 11 reported it to you so it's trust score increased by 10
+          car 8,car 9,car 10's are Malicious their trust score decreases to zero. Car 11 reported it to you so it's trust score is increased by 10
           </p>
           {!currentAccount && (
             <button
