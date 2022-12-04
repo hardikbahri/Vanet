@@ -1,0 +1,722 @@
+.car1{
+ 
+
+    display: inline-flex;
+    position: relative;
+ 
+    
+    position: relative;
+left:4.9cm;
+top:4.5cm
+   
+
+}
+.car2{
+  
+    margin-left: 10cm;
+    display:inline-flex;
+    position: relative;
+    left:4cm;
+    top:5cm;
+    margin-top: .5cm;
+    margin-bottom: .5cm;
+    
+
+}
+.car3{
+    margin-left: 2cm;
+    display:inline-flex;
+
+    position: relative;
+    
+    left: 4cm;    
+    bottom:3cm;
+    padding: .5cm;
+    
+
+
+}
+.car4{
+    margin-left: 2cm;
+    
+    display:inline-flex;
+   
+    position: relative;
+    right:2cm;
+    
+    left: 4cm;
+    padding: .5cm;
+    bottom: 2cm;
+
+    
+    
+
+}
+.car5{
+    margin-left: 2cm;
+    display:inline-flex;
+   
+    position: relative;
+    left: 11cm;
+    bottom: 8cm;
+    margin-top: .8cm;
+    
+    
+    
+
+    
+
+}
+.car6{
+  margin-left: 2cm;
+    display:inline-flex;
+   
+    position: relative;
+    left: 12cm;
+    bottom: 6cm;
+    margin-top: .5cm;
+    
+    
+    
+
+    
+
+}
+.s2car7{
+    margin-left: 2cm;
+    display:inline-flex;
+   
+    position: relative;
+    left: 20cm;
+    bottom: 4cm;
+    
+
+    
+
+}
+.s2car8{
+    margin-left: 2cm;
+    display:inline-flex;
+   
+    position: relative;
+    left: 12cm;
+    
+    
+
+    
+
+}
+.s2car9{
+   
+  margin-left: 2cm;
+  display:inline-flex;
+ 
+  position: relative;
+  left: 10cm;
+  
+
+
+    
+
+}
+.s2car4{
+  margin-left: 2cm;
+  display:inline-flex;
+ 
+  position: relative;
+  left: 3cm;
+  bottom: 0cm;
+  top:5cm;
+  
+  
+
+}
+.s2car1{
+  margin-left: 2cm;
+  display:inline-flex;
+  position: relative;
+  left: 9cm;
+  bottom: 2cm;
+}
+.msgbox{
+    position: relative;
+    left:10cm;
+    bottom: 8cm;
+}
+.arrow1{
+
+    display: inline-flex;
+    height: 2.5rem;
+    width: 5.5rem;
+    position:relative;
+    left:5rem;
+    bottom:2cm;
+}
+.arrow1_3{
+
+    display: inline-flex;
+    height: 2.5rem;
+    width: 5.5rem;
+    position:relative;
+    left:10cm;
+    bottom: .9cm;
+    rotate: 10deg;
+    
+}
+.arrow1_4{
+
+    display: inline-flex;
+    height: 2.5rem;
+    width: 5.5rem;
+    position:relative;
+    left:10.5cm;
+    bottom:1cm;
+    rotate: 35deg;
+}
+.arrow2_3{
+
+    display: inline-flex;
+    height: 2.5rem;
+    width: 5.5rem;
+    position:relative;
+    left:10.2cm;
+    top:3.5cm;
+    rotate: -40deg;
+    
+}
+.arrow2_4{
+
+    display: inline-flex;
+    height: 2.5rem;
+    width: 5.5rem;
+    position:relative;
+    left:10cm;
+    top:3.5cm;
+    rotate: 30deg;
+    
+}
+.arrow3_3{
+
+    display: inline-flex;
+    height: 2.5rem;
+    width: 5.5rem;
+    position:relative;
+    
+    bottom:2cm;
+    left:10.2cm;
+    top:5cm;
+    rotate: -40deg;
+}
+.arrow3_4{
+
+    display: inline-flex;
+    height: 2.5rem;
+    width: 5.5rem;
+    position:relative;
+    
+    bottom:2cm;
+    left:10cm;
+    top:5cm;
+    rotate: -10deg;
+}
+
+.rsu{
+   
+  position:relative;
+  top:3.5cm;
+ 
+}
+#rsu{
+  height: 3cm;
+  width: 3cm;
+}
+#rsu2{
+  height: 2.5cm;
+  width: 2.5cm;
+}
+
+
+
+
+  
+  .image {
+    opacity: 1;
+    display: block;
+    height: 4rem;
+    width: 3cm;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .image2 {
+    opacity: 1;
+    display: block;
+    height: 5.5rem;
+    width: 5.0rem;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    
+    transform: translate(4%, -130%);
+    -ms-transform: translate(-40%, -40%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    
+  }
+  
+  .text2 {
+
+    background-color: rgb(244, 250, 161);
+
+    color: rgb(0, 0, 0);
+
+    font-size: 16px;
+    
+  }
+
+  
+/* arrow anim*/
+
+.progress-bar 
+{float:left; width:2cm; height:10px; margin:0 30px 0 20px;}
+.bar-fill {width:0%; height:100%; background-color:#ccc; border-radius:10px; position:relative; transition: width .5s ease; }
+.progress-bar-arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #ccc;
+	position:absolute;
+	right:-5px;
+	top: -5px;
+}
+
+/*styles specific to each occupation*/
+/*change bar fill width to adjust size*/
+
+#blacksmith .bar-fill {width:62%; background: linear-gradient(to right,  #00B700 0%, #00B700 100%);}
+#blacksmith .progress-bar-arrow {border-color: transparent transparent transparent #00B700;}
+.arrow2{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  left:5rem;
+  top:3cm;
+
+}
+.arrow3{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  left:5rem;
+  top:3cm;
+  rotate: 45deg;
+
+}
+.AROW1{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  left:16.5rem;
+  top:5cm;
+  rotate: 90deg;
+  padding:.5cm;
+}
+.AROW2{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  left:16.2rem;
+  top:2cm;
+  rotate: -90deg;
+  padding: .5cm;
+}
+.AROW3{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+  bottom: 1.5cm;
+  rotate: -90deg;
+}
+.AROW4{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:4.5cm;
+ left:8cm;
+ rotate: -50deg;
+  
+}
+.AROW5{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:10cm;
+ top:1cm;
+
+  
+}
+.AROW6{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:9.8cm;
+ top:4cm;
+ rotate: 30deg;
+
+  
+}
+.AROW7{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18cm;
+ 
+ 
+
+  
+}
+.AROW8{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18cm;
+ top:2.5cm;
+ rotate: -18deg;
+ 
+
+  
+}
+.AROW9{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18cm;
+ top:3cm;
+ rotate: -40deg;
+ 
+
+  
+}
+.AROW10{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18cm;
+ top:2cm;
+ rotate: 35deg;
+ 
+
+  
+}
+.AROW11{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18cm;
+ top:2cm;
+ rotate: 30deg;
+ 
+
+  
+}
+.AROW12{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ top:2cm;
+ left:18.2cm;
+ top:3cm;
+ rotate: -10deg;
+ 
+
+  
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+#border{
+   width: fit-content;
+}
+
+.warrow1{
+rotate:180deg;
+position: relative;
+left:3.5cm
+}
+
+.wcar1{
+position: relative;
+left:4.9cm;
+top:4.5cm
+}
+
+.wrsu{
+  position: relative;
+  top:3cm;
+  height: 4cm;
+  right:2cm;
+
+}
+
+#w2rsu{
+  position: relative;
+  top:3cm;
+  height: 4cm;
+  right:2cm;
+}
+
+.s1arrow1{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  left:7rem;
+  bottom:1cm;
+  
+  rotate: -50deg;
+}
+.s1arrow2{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  left:4rem;
+  top:1cm;
+  
+  rotate: 35deg;
+}
+
+.s2AROW5{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:9cm;
+ bottom: 7.8cm;
+}
+
+.s2AROW6{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:8cm;
+ top:4cm;
+ rotate: 30deg;
+
+}
+.s2AROW16{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:7cm;
+ top:4cm;
+ rotate: 56deg;
+
+}
+.s2AROW7{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:17cm;
+ top:6.9cm;
+
+ 
+
+}
+
+.s2AROW10{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:15cm;
+ top:2cm;
+
+ rotate: 20deg;
+
+
+}
+
+.s2car77{
+  margin-left: 2cm;
+  display:inline-flex;
+ 
+  position: relative;
+  left: 20cm;
+  bottom: 2cm;
+
+}
+.s2AROW11{
+  display: inline-flex;
+  height: 2.5rem;
+  width: 5.5rem;
+  position:relative;
+  
+ 
+ left:16cm;
+ top:8cm;
+
+ rotate: -29deg;
+
+
+}
+
+
+.wwcar3{
+  margin-left: 2cm;
+  display:inline-flex;
+
+  position: relative;
+  
+  left: 4cm;    
+  bottom:1.5cm;
+  padding: .5cm;
+
+}
+
+#wwcar3{
+  display: block;
+  width: 3.6cm;
+  display:inline-flex;
+  
+
+}
+
+.s2car10{
+  position: relative;
+  left:10.9cm;
+  top: 1.5cm;
+}
+
+.s2car11{
+  position: relative;
+  left:21.9cm;
+  bottom:2cm;
+
+}
+
+.s2AROW55{
+  position: relative;
+  bottom: 5cm;
+  left: 15cm;
+  rotate: -20deg;
+}
+
+.s2AROW166{
+  position: relative;
+  left: 17cm;
+  top: 1cm;
+  rotate: -20deg;
+}
+
+.AROW44{
+  position: relative;
+  left:14cm;
+  rotate: 15deg;
+  top:1cm;
+}
+
+
+.s2car777{
+  margin-left: 2cm;
+    display:inline-flex;
+   
+    position: relative;
+    left: 19cm;
+    bottom: 4cm;
+}
+
+.s2AROW555{
+  position: relative;
+  left: 14cm;
+  bottom: 2cm;
+  rotate: -20deg;
+}
+
+.s2AROW1666{
+  position: relative;
+  left: 17cm;
+  top: 2cm;
+  rotate:30deg;
+
+}
+
+.AROW4444{
+  position: relative;
+  left: 15cm;
+  top: 8cm;
+  rotate:10deg;
+
+}
