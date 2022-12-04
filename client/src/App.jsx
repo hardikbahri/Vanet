@@ -39,18 +39,22 @@ function App() {
 
     
       <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<>
+      
+     <Routes> 
+      <Route exact path="/" element={user && user._id ?  <> <div className=""> <div className="gradient-bg-welcome">   <Navbar/> <Welcome /> <Services /> <Transactions /> <Footer /></div></div> </> : <Login setLoginUser={setLoginUser}/>}>
+       
+        {/* <>
         <div className=""> 
-       <div className="gradient-bg-welcome">
-          <Navbar />
-          <Welcome />
+        <div className="gradient-bg-welcome"> 
+           <Navbar />
+           <Welcome />
           <Services />
-          <Transactions />
-          <Footer />
+           <Transactions />
+           <Footer />
          </div>
-         </div> 
-          </>}>
+         </div> </> */}
+      
+        
         </Route>
            <Route path="/login" element={<Login setLoginUser={setLoginUser}/>}>
            </Route>

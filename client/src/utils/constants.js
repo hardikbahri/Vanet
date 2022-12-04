@@ -3,8 +3,8 @@ import abi from "./Transactions.json";
 export const contractAddress = "0x8fd0374f364053EcEA442b3dBb3f3c65cc532b55";
 export const contractABI = abi.abi;
  const tv1=true;
- const tv2=true
- const tv3=false
+ const tv2=false
+ const tv3=true
  export const rsu=true;
 
  var str="."

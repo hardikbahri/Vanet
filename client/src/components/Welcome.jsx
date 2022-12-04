@@ -31,8 +31,8 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 const Welcome = () => {
   
 
-  //const  user = JSON.parse(localStorage.getItem('user'));
-  //console.log(user);
+  const  user = JSON.parse(localStorage.getItem('user'));
+  console.log(user);
   const { currentAccount, connectWallet, handleChange, sendTransaction, formData, isLoading } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
@@ -47,7 +47,6 @@ const Welcome = () => {
   };
 
  
-  
 
   return (
     <div className="dark [--scroll-mt:9.875rem] lg:[--scroll-mt:6.3125rem] js-focus-visible">
@@ -55,7 +54,7 @@ const Welcome = () => {
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-10 py-5 px-10">
         <div className="flex flex-1 justify-start items-start flex-col ">
           <h1 className="text-3xl sm:text-5xl text-white text">
-            WELCOME!   <br /> 
+            WELCOME! {user.name}   <br /> 
           </h1>
           <p className="text-left mt-5 text-white font-light md:w-15 w-11/12 text-base">
              Accident has happened at Car 3, information is sent to RSU
