@@ -1,7 +1,7 @@
 # Features
 Vehicle Tracking: The simulation provides real-time tracking of vehicles, enabling users to monitor their locations and movements.
 
-Blockchain-based Communication: Blockchain technology is employed for secure and decentralized communication between vehicles. This ensures data privacy, integrity, and reduces the risk of unauthorized access.
+Blockchain-based Communication: Blockchain technology is employed for secure and decentralized communication between vehicles. This ensures data privacy, and integrity, and reduces the risk of unauthorized access.
 
 Vehicle Data Management: The simulation effectively manages vehicle data, storing crucial information such as vehicle identification, location history, and communication logs.
 
