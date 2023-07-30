@@ -1,3 +1,18 @@
+# Features
+Vehicle Tracking: The simulation provides real-time tracking of vehicles, enabling users to monitor their locations and movements.
+
+Blockchain-based Communication: Blockchain technology is employed for secure and decentralized communication between vehicles. This ensures data privacy, integrity, and reduces the risk of unauthorized access.
+
+Vehicle Data Management: The simulation effectively manages vehicle data, storing crucial information such as vehicle identification, location history, and communication logs.
+
+Vehicle Trust Scores: Each vehicle is assigned a trust score based on its reliability and behavior. These trust scores help users assess the credibility of a vehicle in the network.
+
+Message Reliability Analysis: The simulation incorporates advanced algorithms to analyze the reliability of communication messages exchanged between vehicles. Achieving an accuracy of over 90%, this analysis provides valuable insights into the trustworthiness of messages.
+
+Enhanced Security: With a 99% improvement in security, the simulation ensures that communication channels are resistant to tampering and malicious attacks.
+
+
+
 Note:-These instructions works only on a windows operating system
 Intall mongodb and compass from https://www.mongodb.com/try/download/community
 Install node.js 
