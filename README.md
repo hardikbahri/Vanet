@@ -15,32 +15,3 @@ Vehicle Trust Scores: Each vehicle is assigned a trust score based on its reliab
 
 Message Reliability Analysis: The simulation incorporates advanced algorithms to analyze the reliability of communication messages exchanged between vehicles. Achieving an accuracy of over 90%, this analysis provides valuable insights into the trustworthiness of messages.
 
-Now run these commands in terminal which is opened in the directory of the project
-               cd frontend
-               cd client
-               npm init vite@latest
-now choose react project then js project 
-and again run  
-               npm install
-               npm install -D tailwindcss postcss autoprefixer
-now after installation
-               cd ..
-               cd ..
-               cd backend
-               npm install mongoose
-               npm install cors
-               npm install express
-               node index.js
-now after installation in backend folder now again come back to frontend/client
-               cd ..
-               cd frontend
-               cd client
-               npm run dev
-The project should come live now just copy paste metamask account addresses in frontend/client/src/context/TransactionContext.jsx from line number 109
-in the hashmap as mentioned in the inline comments of the file
- 
-Also input the count of transactions done by you in the allow message transfer section
-               
-
-
-
