@@ -16,9 +16,6 @@ Vehicle Trust Scores: Each vehicle is assigned a trust score based on its reliab
 Message Reliability Analysis: The simulation incorporates advanced algorithms to analyze the reliability of communication messages exchanged between vehicles. Achieving an accuracy of over 90%, this analysis provides valuable insights into the trustworthiness of messages.
 
 Enhanced Security: With a 99% improvement in security, the simulation ensures that communication channels are resistant to tampering and malicious attacks.
-
-
-
 Note:-These instructions works only on a windows operating system
 Intall mongodb and compass from https://www.mongodb.com/try/download/community
 Install node.js 
