@@ -4,7 +4,6 @@
 This project simulates a vehicle tracking and communication system with advanced features including real-time tracking, blockchain-based communication, vehicle data management, and message reliability analysis.
 
 ## Features
-- **Vehicle Tracking**: Real-time tracking of vehicles, allowing users to monitor their locations and movements.
 - **Blockchain-based Communication**: Secure and decentralized communication between vehicles using blockchain technology, ensuring data privacy, integrity, and reducing unauthorized access.
 - **Vehicle Data Management**: Effective management of vehicle data, storing crucial information such as vehicle identification, location history, and communication logs.
 - **Vehicle Trust Scores**: Each vehicle is assigned a trust score based on its reliability and behavior, helping users assess the credibility of a vehicle in the network.
